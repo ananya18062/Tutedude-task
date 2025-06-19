@@ -1,5 +1,9 @@
 num=int(input("Enter a number:"))
-if (num%2==0):
-  print(num,"is an even number.")
-else:
-  print(num,"is an odd number.")
+def factorial(a):
+    fact=1
+    for i in range(1,num+1):
+        fact*=i
+    return fact
+
+print("Factorial of the", num ,"is:",factorial(num))
+
